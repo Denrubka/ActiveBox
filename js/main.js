@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openNav = () => {
     burger.addEventListener('click', () => {
       navList.classList.toggle('show');
+      burger.classList.toggle('close');
     });
   }
   openNav();

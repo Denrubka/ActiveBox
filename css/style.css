@@ -462,6 +462,9 @@
   background-color: transparent;
   margin-right: 28px;
   cursor: pointer;
+  -webkit-transition: rotate 0.2s ease-in;
+  -o-transition: rotate 0.2s ease-in;
+  transition: rotate 0.2s ease-in;
 }
 
 .burger-line {
@@ -469,6 +472,36 @@
   width: 20px;
   height: 3px;
   background-color: #1f2022;
+}
+
+.close {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.close .burger-line-2 {
+  display: none;
+}
+
+.close .burger-line-1 {
+  position: relative;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close .burger-line-3 {
+  position: absolute;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 body {
