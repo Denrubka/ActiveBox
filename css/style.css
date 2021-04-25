@@ -489,6 +489,10 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .header-intro__title {
+    font-size: 50px;
+  }
+
   .reviews-right__text {
     font-size: 20px;
   }
@@ -543,7 +547,7 @@ a {
   }
 
   .header-intro__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .reviews {
